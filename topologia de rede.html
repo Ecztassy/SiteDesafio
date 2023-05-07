@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Desafio 03</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header Wrapper -->
+				<div id="header-wrapper">
+					<div class="container">
+
+						<!-- Header -->
+							<header id="header">
+								<div class="inner">
+
+									<!-- Logo -->
+									<div id="logo1"> 
+										<img src="images/Logo (1).png"> 
+									</div> 
+										<h1><a href="index.html" id="logo">Biblioteca digital</a></h1>
+
+									<!-- Nav -->
+									<nav id="nav">
+										<ul>
+											
+											<li>
+												<a href="index.html">Início</a>
+												
+													<li>
+														<a href="hardware.html">Hardware</a></li>
+													<li>
+														<a href="software.html">Software</a></li>
+													<li>
+														<a href="topologia de rede.html">Rede</a>
+														
+													</li>
+													<li>
+														<a href="contéudos.html">Conteúdos</a></li>
+													
+											
+										</ul>
+									</nav>
+
+							</div>
+						</header>
+
+			<!-- Main Wrapper -->
+				<div id="main-wrapper">
+					<div class="wrapper style2">
+						<div class="inner">
+							<div class="container">
+								<div id="content">
+
+									<!-- Content -->
+
+										<article>
+											<header class="major">
+												<h2>Topologia de rede</h2>
+											</header>
+
+											<span class="image featured"><img src="images/Banner.png" alt="" /></span>
+
+											<p>O que é topologia de rede?
+
+												De maneira bem resumida, topologia é o termo usado para definir a forma 
+												como você estrutura a sua rede de computadores. 
+												Por exemplo, digamos que você acabou de fundar uma software house e deseja 
+												conectar todas as máquinas em uma única rede, agilizando a comunicação, 
+												a segurança e o compartilhamento dos arquivos. A realidade é que a forma como se organiza as 
+												máquinas em uma rede, interfere não apenas na qualidade da conexão, mas também, na estabilidade.<p>
+												
+											<h3>Física</h3>
+												
+												<p>É dessa topologia que falaremos, explicando todas as estratégias de organização, cabeamento e disposição das máquinas.
+												
+												<h3>Lógica</h3>
+												
+												Já a lógica examina e organiza a forma como a rede desempenha seu trabalho. O objetivo dessa topologia é 
+												encontrar a melhor forma de conectar os nodes da rede, estimulando um tráfego ainda mais eficiente.
+												
+												Todas as técnicas apresentam um nome bem ilustrativo, pois fazem uma alusão visual à forma como está organizando a rede. 
+												Isso acontece porque a topologia escolhida impacta diretamente o custo da estrutura, representado na compra de cabos, 
+												hubs e switches para comportar o layout desejado. 
+												Optar por uma topologia complexa pode até ajudar, caso a implementação seja bem planejada.
+												
+												<h3>Anel</h3>
+												
+												A topologia Anel recebe esse nome por conectar os dispositivos em um mesmo círculo. 
+												A topologia Anel nada mais é do que um ciclo de dispositivos conectados, 
+												em que os dados são repassados por cada node até alcançar seu destino.
+												
+												PC 1 > PC 2 > Servidor > PC 3 > Impressora > PC 4 > PC1
+												
+												Um dos grandes benefícios da topologia Anel é que ela é bem eficiente na transmissão de dados sem erros. 
+												Em grandes redes, a topologia Anel pode utilizar repetidores de sinal, 
+												aumentando a confiabilidade da transmissão e evitando a perda de dados. 
+												Além disso, a topologia Anel não é tão recomendada para operações em crescimento. 
+												Já a topologia Árvore recebe esse nome por lembrar os galhos de uma árvore, ou seja, existe uma hierarquia na disposição dos nodes.
+												
+												O grande trunfo da topologia Árvore é eliminar a vulnerabilidade da topologia Anel, 
+												em que uma falha em qualquer um dos dispositivos da rede poderia colocar tudo abaixo. 
+												Além disso, esse padrão facilita a identificação de erros, uma vez que cada branch da rede pode ser diagnosticado individualmente. 
+												Por fim, a topologia Árvore também oferece um layout muito mais simples e prático para operações em crescimento. 
+												A esse ponto, é bem possível que você já tenha identificado o calcanhar de Aquiles na topologia Árvore.
+												
+												Nesse padrão, toda a rede depende de um único ponto de origem, o nó raiz.
+												
+												<h3>Barramento</h3>
+												
+												O nome em português não é tão intuitivo quanto suas alternativas no idioma inglês, pelo que se referem como bus, line ou backbone topology.
+												
+												Cabo Central > PC 1 > Cabo Central > PC 2 > Cabo Central > PC 3 > Cabo Central
+												
+												Além disso, é uma topologia com manutenção simplificada, permitindo acrescentar novos dispositivos sem grandes planejamentos. 
+												Por ser uma rede em que o fluxo de dados é unidirecional e, assim como a Anel, é um pouco mais 
+												complicado diagnosticar e isolar os problemas na rede. Além disso, a topologia Barramento sofre com a mesma vulnerabilidade 
+												da dependência exclusiva. Para finalizar, o aumento do tráfego interfere diretamente na velocidade da rede.
+												
+												<h3>Estrela</h3>
+												
+												A topologia Estrela é mais uma estratégia que prioriza a simplicidade, abrindo mão de um pouquinho da resiliência.
+												
+												PC 1 > Hub Central < PC 3
+												
+												Assim como a topologia Barramento, o padrão Estrela também sofre com a vulnerabilidade da dependência exclusiva. 
+												A topologia Árvore também sofre com o mesmo problema, mas conta com um diferencial.
+												
+												TV > Modem < PC
+												
+												Nesse cenário, a infraestrutura deve escolher entre as topologias anteriores ou a uma variação da ponto a ponto, a topologia em Malha.<p>
+												
+												
+
+											<h3>Malha</h3>
+												
+												<p>Como todos os dispositivos estão cabeados entre si, a falha individual ou até mesmo coletiva de algumas máquinas 
+												não será o suficiente para derrubar a conexão. Além disso, a topologia em Malha permite que os nodes 
+												sempre tenham a opção de enviar os pacotes de dados pela rota mais eficiente. 
+												Cabear e conectar todos os dispositivos de uma rede entre si é uma tarefa que exige um nível de planejamento considerável.</p>
+												
+												<h3>Híbrida</h3>
+												
+												<p>Por fim, vale lembrar da topologia Híbrida. A estrutura pode se integrar a redes com topologia Estrela, 
+												Árvore e Barramento, evitando o custo necessário para uma 
+												reestruturação completa. Por essa razão, a topologia Híbrida é frequentemente utilizada em grandes empresas, 
+												interligando departamentos, setores e escritórios, conforme eles são integrados na operação da empresa. 
+												Como pôde ver, não existe uma topologia certa ou errada, mas aquela que mais se adapta a sua necessidade.</p>
+									
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
